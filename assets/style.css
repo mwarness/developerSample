@@ -96,6 +96,16 @@ img {
   margin: 0px 400px 0px 400px;
 }
 
+.term{
+  font-weight: bolder;
+  text-decoration: underline ;
+}
+
+.headingIt{
+  text-decoration: double underline;
+
+}
+
 
 #english-image {
   margin: 74px 14px 0px 0px;
