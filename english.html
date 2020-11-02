@@ -3,57 +3,174 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>English</title>
-    <!-- css personal styling -->
-    <link rel="stylesheet" href="styles.css" />
-
-    <!-- CSS bootstrap -->
+    <!-- bootstrap  -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!-- jQuery and JS bundle w/ Popper.js -->
+    <!-- google fonts  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      src="https://kit.fontawesome.com/dbf28728e8.js"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
+    <!-- personal touch  -->
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
 
-    <!-- Slick Carousel -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <title>English</title>
+    <script>
+      window.onload = () => {
+        document
+          .getElementById("row1col1")
+          .addEventListener("click", columnClick1);
+        document
+          .getElementById("row2col1")
+          .addEventListener("click", columnClick2);
+        document
+          .getElementById("row3col1")
+          .addEventListener("click", columnClick3);
+        document
+          .getElementById("row4col1")
+          .addEventListener("click", columnClick4);
+        document
+          .getElementById("row5col1")
+          .addEventListener("click", columnClick5);
+        document
+          .getElementById("row6col1")
+          .addEventListener("click", columnClick6);
+        document
+          .getElementById("row7col1")
+          .addEventListener("click", columnClick7);
+        document
+          .getElementById("row8col1")
+          .addEventListener("click", columnClick8);
+      };
+
+      columnClick1 = () => {
+        const englishDefinition = document.getElementById("row1col2");
+        englishDefinition.style.display === "block"
+          ? (englishDefinition.style.display = "none")
+          : (englishDefinition.style.display = "block");
+      };
+
+      columnClick2 = () => {
+        const englishDefinition = document.getElementById("row2col2");
+        englishDefinition.style.display === "block"
+          ? (englishDefinition.style.display = "none")
+          : (englishDefinition.style.display = "block");
+      };
+
+      columnClick3 = () => {
+        const englishDefinition = document.getElementById("row3col2");
+        englishDefinition.style.display === "block"
+          ? (englishDefinition.style.display = "none")
+          : (englishDefinition.style.display = "block");
+      };
+
+      columnClick4 = () => {
+        const englishDefinition = document.getElementById("row4col2");
+        englishDefinition.style.display === "block"
+          ? (englishDefinition.style.display = "none")
+          : (englishDefinition.style.display = "block");
+      };
+
+      columnClick5 = () => {
+        const englishDefinition = document.getElementById("row5col2");
+        englishDefinition.style.display === "block"
+          ? (englishDefinition.style.display = "none")
+          : (englishDefinition.style.display = "block");
+      };
+
+      columnClick6 = () => {
+        const englishDefinition = document.getElementById("row6col2");
+        englishDefinition.style.display === "block"
+          ? (englishDefinition.style.display = "none")
+          : (englishDefinition.style.display = "block");
+      };
+
+      columnClick7 = () => {
+        const englishDefinition = document.getElementById("row7col2");
+        englishDefinition.style.display === "block"
+          ? (englishDefinition.style.display = "none")
+          : (englishDefinition.style.display = "block");
+      };
+
+      columnClick8 = () => {
+        const englishDefinition = document.getElementById("row8col2");
+        englishDefinition.style.display === "block"
+          ? (englishDefinition.style.display = "none")
+          : (englishDefinition.style.display = "block");
+      };
+    </script>
   </head>
+
   <body>
-    <!-- Navbar -->
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link active" href="index.html">Political Science</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="social.html">Social Studies</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="english.html">English</a>
-      </li>
-    </ul>
-    <!-- Main Container -->
     <div class="container">
       <div class="row">
-        <div class="col">
-          <h1>Words to Know</h1>
-          <h3>
-            What words should you know to appreciate the rest of Part I of the
-            novel?
-          </h3>
-          <p>
+        <div class="navbox col-sm-3">
+          <div class="navborder border border">
+            <nav class="navbar navbar-expand-sm">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="index.html"
+                    style="padding-right: 29px"
+                    >Health</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="social.html"
+                    style="padding-right: 29px"
+                    >Social</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="english.html"
+                    style="padding-right: 29px"
+                  >
+                    <div class="underlined">English</div>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+      <div class="global-border border">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1>Words to Know</h1>
+          </div>
+        </div>
+        <br /><br />
+        <div class="row">
+          <div class="col-sm-12">
+            <h4>
+              What words should you know to appreciate the rest of Part I of the
+              novel?
+            </h4>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <p class="col-sm-12">
             Although Miyax has finally made friends with Amaroq and the other
             wolves in his pack, she is still struggling to survive. Getting
             Jello to share some meat from his "belly basket" had been a
@@ -61,7 +178,7 @@
             method forever. The next time she tries, he might attack her instead
             of giving in to his "babysitting" instincts.
           </p>
-          <p>
+          <p class="col-sm-12">
             Throughout the rest of Part I of Julie of the Wolves, the
             protagonist continues her quest to stay alive in spite of the
             harshness of the elements, a shortage of food, and her loneliness.
@@ -71,71 +188,110 @@
           </p>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-          <p>
-            See if you can figure out what each word might mean when used to
-            describe someone's attempt to survive alone in the Alaskan tundra.
-            Then click the word to see its definition as it will appear in the
-            novel.
-          </p>
+      <br /><br />
+      <div class="global-border border">
+        <div class="row">
+          <div class="col-sm-6">
+            <div id="table-instructions">Click terms to reveal definitions</div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Term</th>
+                  <th scope="col">Definition</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="row1col1">Forage</td>
+                  <td>
+                    <div class="display-none" id="row1col2">
+                      Search far and wide for food
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="row2col1">Improvisation</td>
+                  <td>
+                    <div class="display-none" id="row2col2">
+                      Creating spontaneously, using whatever is available
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="row3col1">Undulating</td>
+                  <td>
+                    <div class="display-none" id="row3col2">
+                      Moving with a wave-like motion
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="row4col1">Eerie</td>
+                  <td>
+                    <div class="display-none" id="row4col2">
+                      Spooky, unsettling
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="row5col1">Writhed</td>
+                  <td>
+                    <div class="display-none" id="row5col2">
+                      Twisted or squirmed, usually in pain
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="row6col1">Tribute</td>
+                  <td>
+                    <div class="display-none" id="row6col2">
+                      An act or gesture of respect and gratitude
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="row7col1">Menacingly</td>
+
+                  <td>
+                    <div class="display-none" id="row7col2">
+                      In a threatening, aggressive way
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="row8col1">Morsel</td>
+                  <td>
+                    <div class="display-none" id="row8col2">
+                      A very small bite of something
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="wolf-pic col-sm-6">
+            <img
+              id="english-image"
+              src="assets/images/tooCool.jpeg"
+              alt="English Bulldog with a look of victory."
+            />
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-          <table style="width: 100%">
-            <tr>
-              <th>Term</th>
-              <th>Definition</th>
-            </tr>
-            <tr>
-              <td>forage</td>
-              <td>search far and wide for food</td>
-            </tr>
-            <tr>
-              <td>improvisation</td>
-              <td>creating spontaneously, using whatever is available</td>
-            </tr>
-            <tr>
-              <td>undulating</td>
-              <td>moving with a wave-like motion</td>
-            </tr>
-            <tr>
-              <td>eerie</td>
-              <td>spooky, unsettling</td>
-            </tr>
-            <tr>
-              <td>writhed</td>
-              <td>twisted or squirmed, usually in pain</td>
-            </tr>
-            <tr>
-              <td>tribute</td>
-              <td>an act or gesture of respect and gratitude</td>
-            </tr>
-            <tr>
-              <td>menacingly</td>
-              <td>in a threatening, aggressive way</td>
-            </tr>
-            <tr>
-              <td>morsel</td>
-              <td>a very small bite of something</td>
-            </tr>
-          </table>
-        </div>
-        <div class="col">
-          <img
-            src="https://image.shutterstock.com/z/stock-photo-hand-drawing-portrait-of-a-black-wolf-on-a-black-background-719326915.jpg"
-            alt="Wolf"
-            height="300"
-            width="400"
-          />
+      <br /><br />
+      <div class="next-button global-border">
+        <div class="row">
+          <div class="col-sm-12" id="brightenMe">
+            <a href="index.html">Back to the beginning!</a>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-          <a href="index.html">Back to Lesson One</a>
+      <br /><br /><br /><br />
+      <footer class="row">
+        <div class="copyright col-sm-12">
+          <div>A Covid Special Production 2020</div>
         </div>
-      </div>
+      </footer>
     </div>
   </body>
 </html>

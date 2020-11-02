@@ -3,54 +3,209 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Social Studies</title>
-    <!-- css personal styling -->
-    <link rel="stylesheet" href="styles.css" />
 
-    <!-- CSS bootstrap -->
+    <!-- bootstrap  -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- google fonts  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
     />
 
-    <!-- jQuery and JS bundle w/ Popper.js -->
+    <!-- Font Awesome Icons -->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      src="https://kit.fontawesome.com/dbf28728e8.js"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
+    <!-- personal touch  -->
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
 
-    <!-- Slick Carousel -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <title>Social Studies</title>
+    <script>
+      window.onload = () => {
+        const respectOne = document
+          .getElementById("respect1")
+          .addEventListener("click", respectOneClick);
+        const disRespectOne = document
+          .getElementById("disrespect1")
+          .addEventListener("click", disrespectOneClick);
+        const respectTwo = document
+          .getElementById("respect2")
+          .addEventListener("click", respectTwoClick);
+        const disrespectTwo = document
+          .getElementById("disrespect2")
+          .addEventListener("click", disrespectTwoClick);
+        const respectThree = document
+          .getElementById("respect3")
+          .addEventListener("click", respectThreeClick);
+        const disrespectThree = document
+          .getElementById("disrespect3")
+          .addEventListener("click", disrespectThreeClick);
+        const respectFour = document
+          .getElementById("respect4")
+          .addEventListener("click", respectFourClick);
+        const disrespectFour = document
+          .getElementById("disrespect4")
+          .addEventListener("click", disrespectFourClick);
+        const respectFive = document
+          .getElementById("respect5")
+          .addEventListener("click", respectFiveClick);
+        const disrespectFive = document
+          .getElementById("disrespect5")
+          .addEventListener("click", disrespectFiveClick);
+        const respectSix = document
+          .getElementById("respect6")
+          .addEventListener("click", respectSixClick);
+        const disrespectSix = document
+          .getElementById("disrespect6")
+          .addEventListener("click", disrespectSixClick);
+      };
+
+      correctAlert = (msg, myOk) => {
+        const confirmBox = $("#correct");
+        confirmBox.find(".message").text(msg);
+        confirmBox
+          .find(".ok")
+          .unbind()
+          .click(function () {
+            confirmBox.hide();
+          });
+        confirmBox.find(".ok").click(myOk);
+        confirmBox.show();
+        setTimeout(function () {
+          confirmBox.hide();
+        }, 3000);
+      };
+
+      incorrectAlert = (msg, myOk) => {
+        const confirmBox = $("#incorrect");
+        confirmBox.find(".message").text(msg);
+        confirmBox
+          .find(".ok")
+          .unbind()
+          .click(function () {
+            confirmBox.hide();
+          });
+        confirmBox.find(".ok").click(myOk);
+        confirmBox.show();
+        setTimeout(function () {
+          confirmBox.hide();
+        }, 3000);
+      };
+
+      respectOneClick = () => {
+        incorrectAlert();
+      };
+
+      disrespectOneClick = () => {
+        correctAlert();
+      };
+
+      respectTwoClick = () => {
+        correctAlert();
+      };
+
+      disrespectTwoClick = () => {
+        incorrectAlert();
+      };
+
+      respectThreeClick = () => {
+        incorrectAlert();
+      };
+
+      disrespectThreeClick = () => {
+        correctAlert();
+      };
+
+      respectFourClick = () => {
+        correctAlert();
+      };
+
+      disrespectFourClick = () => {
+        incorrectAlert();
+      };
+
+      respectFiveClick = () => {
+        incorrectAlert();
+      };
+
+      disrespectFiveClick = () => {
+        correctAlert();
+      };
+
+      respectSixClick = () => {
+        incorrectAlert();
+      };
+
+      disrespectSixClick = () => {
+        correctAlert();
+      };
+    </script>
   </head>
+
   <body>
-    <!-- Navbar -->
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link active" href="index.html">Political Science</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="social.html">Social Studies</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="english.html">English</a>
-      </li>
-    </ul>
-    <!-- Main Container -->
     <div class="container">
       <div class="row">
-        <div class="col">
-          <h1>Practice</h1>
-          <h3>Respect or disrespect?</h3>
-          <p>
+        <div class="navbox col-sm-3">
+          <div class="navborder border">
+            <nav class="navbar navbar-expand-sm">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="index.html"
+                    style="padding-right: 29px"
+                    >Health</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="social.html"
+                    style="padding-right: 29px"
+                  >
+                    <div class="underlined">Social</div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="english.html"
+                    style="padding-right: 29px"
+                    >English</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+      <div class="global-border border">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1>Practice</h1>
+          </div>
+        </div>
+        <br /><br />
+        <div class="row">
+          <div class="col-sm-12">
+            <h4>Respect or disrespect?</h4>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <p class="col-sm-12">
             Now that you’ve seen examples of the ways people show one another
             respect and disrespect, see if you can classify the following words
             and actions. Read each item and decide whether it shows respect or
@@ -58,92 +213,142 @@
           </p>
         </div>
       </div>
-      <!-- Questions & Answers -->
-      <!-- Correct: Good job!-->
-      <!-- Incorrect: Take another look at the examples in this lesson.-->
-      <!-- Q1 A:Disrespect-->
-      <div class="row">
-        <div class="col">
-          <p>
+      <br /><br />
+      <div class="global-border border">
+        <div class="row">
+          <p class="col-sm-12">
             Janelle is excitedly telling her friend Reina how her job interview
             went. Reina keeps texting her boyfriend.
           </p>
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-secondary">Respect</button>
-            <button type="button" class="btn btn-secondary">Disrespect</button>
-          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3"></div>
+          <button class="btn btn-dark col-sm-2" id="respect1">Respect</button>
+          <div class="col-sm-2"></div>
+          <button class="btn btn-dark col-sm-2" id="disrespect1">
+            Disrespect
+          </button>
+          <div class="col-sm-3"></div>
         </div>
       </div>
-      <!-- Q2 A:Respect-->
-      <div class="row">
-        <div class="col">
-          <p>
+      <br /><br />
+      <div class="global-border border">
+        <div class="row">
+          <p class="col-sm-12">
             “I can see your point about the cost of the streetlights, but what
             about the nighttime safety of the people who live in the
             neighborhood?”
           </p>
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-secondary">Respect</button>
-            <button type="button" class="btn btn-secondary">Disrespect</button>
-          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3"></div>
+          <button class="btn btn-dark col-sm-2" id="respect2">Respect</button>
+          <div class="col-sm-2"></div>
+          <button class="btn btn-dark col-sm-2" id="disrespect2">
+            Disrespect
+          </button>
+          <div class="col-sm-3"></div>
         </div>
       </div>
-      <!-- Q3 B:Disrespect-->
-      <div class="row">
-        <div class="col">
-          <p>
+      <br /><br />
+      <div class="global-border border">
+        <div class="row">
+          <p class="col-sm-12">
             All of Ron’s friends keep asking him to go camping with them next
             month, but he doesn’t enjoy the outdoors. His friends won’t stop
             nagging him.
           </p>
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-secondary">Respect</button>
-            <button type="button" class="btn btn-secondary">Disrespect</button>
-          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3"></div>
+          <button class="btn btn-dark col-sm-2" id="respect3">Respect</button>
+          <div class="col-sm-2"></div>
+          <button class="btn btn-dark col-sm-2" id="disrespect3">
+            Disrespect
+          </button>
+          <div class="col-sm-3"></div>
         </div>
       </div>
-      <!-- Q4 A:Respect-->
-      <div class="row">
-        <div class="col">
-          <p>
+      <br /><br />
+      <div class="global-border border">
+        <div class="row">
+          <p class="col-sm-12">
             Because our cousin LeVar has asthma, we always dust and vacuum
             before he spends the night at our house.
           </p>
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-secondary">Respect</button>
-            <button type="button" class="btn btn-secondary">Disrespect</button>
-          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3"></div>
+          <button class="btn btn-dark col-sm-2" id="respect4">Respect</button>
+          <div class="col-sm-2"></div>
+          <button class="btn btn-dark col-sm-2" id="disrespect4">
+            Disrespect
+          </button>
+          <div class="col-sm-3"></div>
         </div>
       </div>
-      <!-- Q5 A:Disrespect-->
-      <div class="row">
-        <div class="col">
-          <p>
+      <br /><br />
+      <div class="global-border border">
+        <div class="row">
+          <p class="col-sm-12">
             Stacy, who is frightened of dogs, meets Jarrod and his dog Thor out
             on a walk. Jarrod says, “Don’t be scared, Stacy. Thor is really
             gentle. Just try rubbing his ears.”
           </p>
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-secondary">Respect</button>
-            <button type="button" class="btn btn-secondary">Disrespect</button>
+        </div>
+        <div class="row">
+          <div class="col-sm-3"></div>
+          <button class="btn btn-dark col-sm-2" id="respect5">Respect</button>
+          <div class="col-sm-2"></div>
+          <button class="btn btn-dark col-sm-2" id="disrespect5">
+            Disrespect
+          </button>
+          <div class="col-sm-3"></div>
+        </div>
+      </div>
+      <br /><br />
+      <div class="global-border border">
+        <div class="row">
+          <p class="col-sm-12">
+            I love oyster-flavored Jiffy Snax! Doesn’t everybody?
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-sm-3"></div>
+          <button class="btn btn-dark col-sm-2" id="respect6">Respect</button>
+          <div class="col-sm-2"></div>
+          <button class="btn btn-dark col-sm-2" id="disrespect6">
+            Disrespect
+          </button>
+          <div class="col-sm-3"></div>
+        </div>
+      </div>
+      <br /><br />
+      <div class="next-button global-border">
+        <div class="row">
+          <div class="col-sm-12" id="brightenMe">
+            <a href="english.html">Next Lesson!</a>
           </div>
         </div>
       </div>
-      <!-- Q6 A:Disrespect-->
-      <div class="row">
-        <div class="col">
-          <p>I love oyster-flavored Jiffy Snax! Doesn’t everybody?</p>
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-secondary">Respect</button>
-            <button type="button" class="btn btn-secondary">Disrespect</button>
-          </div>
-        </div>
+      <div id="correct" class="fadeIn">
+        <div class="message">Good Job!</div>
+        <br />
+        <button class="ok btn btn-dark">OK</button>
       </div>
-      <div class="row">
-        <div class="col">
-          <a href="english.html">Next Lesson</a>
+      <div id="incorrect" class="fadeIn">
+        <div class="message">
+          Take another look at the examples in this lesson.
         </div>
+        <br />
+        <button class="ok btn btn-dark">OK</button>
       </div>
+      <br /><br /><br /><br />
+      <footer class="row">
+        <div class="copyright col-sm-12">
+          <div>A Covid Special Production 2020</div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

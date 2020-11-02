@@ -1,0 +1,265 @@
+body {
+
+
+  background-color:rgba(61, 64, 91, 1);
+  color:rgba(61, 64, 91, 1);
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: double underline;
+
+}
+
+h4 {
+  text-decoration: underline;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+;
+}
+
+.btn {
+  background-color:  rgba(129, 178, 154, 1);
+  border-radius: 20px;
+  border: 2px solid rgba(129, 178, 154, 1);
+}
+
+.ok {
+  background-color:rgba(61, 64, 91, 1);
+}
+
+.underlined {
+  text-decoration: double underline;
+}
+
+.navbox {
+  margin-left: 413px;
+}
+
+.nav-link {
+  color: rgba(61, 64, 91, 1);
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.navborder {
+  margin: 20px -18px 20px 0px;
+  padding-bottom: 3px;
+}
+
+.border {
+  background-color:  whitesmoke;
+  border-radius: 10px;
+}
+
+.global-border {
+  padding: 10px;
+  color: 1px solid rgba(129, 178, 154, 1);
+}
+
+a {
+  color:rgba(224, 122, 95, 1);
+  
+}
+
+.nav-link:hover {
+  color:rgba(224, 122, 95, 1);
+}
+
+a:hover {
+  color:rgba(224, 122, 95, 1);
+}
+
+#answer {
+  display: none;
+}
+
+.display-none {
+  display: none;
+}
+
+.table {
+  color:rgba(61, 64, 91, 1);
+  border: 1px solid  rgba(61, 64, 91, 1);
+}
+
+img {
+  margin: 0px auto 0px auto;
+  height: 343px;
+  width: 514px;
+}
+
+.next-button {
+  margin: 0px 400px 0px 400px;
+}
+
+
+#english-image {
+  margin: 74px 14px 0px 0px;
+  width: 75%;
+}
+#brightenMe{
+  font-weight: bolder;
+  border: 1px solid rgba(224, 122, 95, 1);
+  border-radius: 10px;
+}
+.question {
+  margin-top: 5px;
+}
+
+#table-instructions {
+  margin-bottom: 10px;
+  text-decoration: double underline;
+  font-weight: bold;
+}
+
+#correct {
+  display: none;
+  background-color:rgba(61, 64, 91, 1);
+  color: white;
+  border: 2px solid rgba(61, 64, 91, 1);
+  position: fixed;
+  width: 300px;
+  height: 158px;
+  margin-left: 406px;
+  top: 40%;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 31px;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+#incorrect {
+  display: none;
+  background-color: rgba(224, 122, 95, 1);
+  color: white;
+  border: 2px solid rgba(224, 122, 95, 1);
+  position: fixed;
+  width: 300px;
+  height: 205px;
+  margin-left: 406px;
+  top: 40%;
+  box-sizing: border-box;
+  text-align: center;
+  
+  font-size: 25px;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@media only screen and (max-width: 375px) {
+  
+  [class*="navborder"] {
+      margin-right: 257px;
+  }
+
+  img {
+      width: 100%;
+      height: auto;
+  }
+
+  [class*="btn"] {
+      width: 200px;
+      margin: 13px 0px 12px 70px;
+      right: 16px;
+  }
+
+  [class*="next-button"] {
+      margin: auto;
+  }
+
+  [id*="correct"] {
+      margin-left: -113px;
+      left: -367px;
+  }
+
+  [class*="ok"] {
+      margin-left: 0px;
+      margin-top: -3px;
+  }
+
+  [class*="wolf-pic"] {
+      margin-top: -28px;
+  }
+
+  [class*="navbox"] {
+      margin-left: 130px;
+      right: 18px;
+  }
+
+}
+
+@media only screen and (max-width: 414px) {
+  
+  [class*="navborder"] {
+      margin-right: 257px;
+  }
+
+  [class*="navbar"] {
+      margin-right: -14px;    
+  }
+
+  img {
+      width: 100%;
+      height: auto;
+  }
+
+  [class*="btn"] {
+      width: 200px;
+      margin: 13px 0px 12px 94px;
+  }
+
+  [class*="next-button"] {
+      margin: auto;
+  }
+
+  [id*="correct"] {
+      margin-left: -157px;
+      right: 169px;
+  }
+
+  [class*="ok"] {
+      margin-left: 0px;
+      margin-top: -3px;
+  }
+
+  [class*="wolf-pic"] {
+      margin-top: -28px;
+  }
+
+  [class*="navbox"] {
+      margin-left: 149px;
+  }
+
+}
+
+@media only screen and (max-width: 411px) {
+  
+  [id*="correct"] {
+      margin-left: -157px;
+  }
